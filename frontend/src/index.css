@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* background-color: var(--cream); */
+  font-family: "regular";
+
+}
+@font-face {
+  font-family: "regulars";
+  src: url("/fonts/regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "regular";
+  src: url("/fonts/hel2.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "am";
+  src: url("/fonts/am.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@import "tailwindcss";
+:root {
+  --royal:rgba(0,51,153);
+  --blue:#6699cc;
+  --powderblue:#adcce6;
+  --gold:rgba(184,134,11);
+  --cream:rgba(250,248,240);
+}

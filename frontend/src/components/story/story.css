@@ -1,0 +1,56 @@
+.story {
+  background-color: var(--powderblue);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 50px 100px;
+  gap: 50px;
+}
+.d {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav_imgs {
+  width: 300px;
+}
+.welcome_letter {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.welcome_paragraph {
+  line-height: 150%;
+  color: var(--royal);
+  text-shadow: 1px 1px 1px #fff;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.space {
+  margin: 15px 0;
+}
+
+.ss {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
+.story_sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.west {
+  margin: 20px 0;
+  background-color: var(--royal);
+  padding: 10px 50px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid var(--cream);
+  border-radius: 40px;
+  /* font-weight: bold; */
+  font-size: 20px;
+}

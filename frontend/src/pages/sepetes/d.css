@@ -1,0 +1,38 @@
+.description_paragraph {
+  color: var(--gold);
+  line-height: 150%;
+  margin: 10px auto;
+  font-size: 18px;
+  text-align: center;
+  width: 70%;
+}
+.details {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* padding: 0 100px; */
+
+  margin: 30px 250px;
+  gap: 30px;
+}
+
+.details_sub {
+  margin-bottom: 50px;
+}
+.detail_i {
+  width: 100%;
+  border-radius: 20px;
+  height: 70vh;
+  object-fit: cover;
+}
+.detai_p {
+  color: var(--gold);
+  margin-top: 15px;
+}
+
+.d_title {
+  font-family: "am";
+  color: var(--royal);
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
