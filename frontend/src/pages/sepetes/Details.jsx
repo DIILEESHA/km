@@ -21,17 +21,18 @@ const Details = () => {
   if (!data.length) return <p>Loading...</p>;
 
   return (
-    <div className="details">
-      {data.map((item, index) => (
-        <div key={index} className="details_sub">
-          <h2 className="d_title">{item.title}</h2>
-          {item.image && (
-            <img
-              src={urlFor(item.image).url()}
-              alt={item.title}
-              className="detail_i"
-            />
-          )}
+    <div className="dotta">
+      <div className="details">
+        {data.map((item, index) => (
+          <div key={index} className="details_sub">
+            <h2 className="d_title">{item.title}</h2>
+            {item.image && (
+              <img
+                src={urlFor(item.image).url()}
+                alt={item.title}
+                className="detail_i"
+              />
+            )}
             <PortableText
               value={item.content}
               components={{
@@ -63,8 +64,9 @@ const Details = () => {
                 },
               }}
             />
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -9,12 +9,16 @@
 .details {
   display: grid;
   grid-template-columns: 1fr;
+  
   /* padding: 0 100px; */
-
-  margin: 30px 250px;
+  
+  margin: 0px 250px;
   gap: 30px;
 }
+.dotta{
+    background-color: var(--cream);
 
+}
 .details_sub {
   margin-bottom: 50px;
 }
