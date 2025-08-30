@@ -159,7 +159,6 @@
 }
 .name_venue {
   color: var(--gold);
-  font-weight: 600;
   font-size: 20px;
   text-align: center;
 }
@@ -257,11 +256,25 @@ overflow: hidden;
     gap: 15px;
   }
 
+  .valed{
+  }
+
   .name_venue,
   .ven_name {
     text-align: left;
     font-size: 16px;
+  }  .main_title{
+    font-size: 17px;
   }
+  .sawan,.name_venue {
+    font-size: 15px!important;
+  }
+
+  .ven_name{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
 }
 
 /* Extra small devices (very small phones, 480px and below) */
@@ -279,8 +292,5 @@ overflow: hidden;
     padding: 6px 10px;
   }
 
-  .sawan,
-  .main_title {
-    font-size: 18px;
-  }
+
 }

@@ -2,7 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./it.css";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { client } from "../../sanity";
-
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 const Itinerary = () => {
   const [itinerary, setItinerary] = useState([]);
   const [defaultTab, setDefaultTab] = useState("");
@@ -51,15 +56,17 @@ const Itinerary = () => {
               <div className="val_sub">
                 <h2 className="main_title">{day.title}</h2>
                 <div className="top_grid">
-                  {day.details.map((detail, index) => (
-                    <div className="top_grid_sub" key={index}>
-                      <div className="markup">
-                        <h2 className="name_venue">{detail.label}</h2>
-                      </div>
-                      
-                      <p className="ven_name">{detail.value}</p>
-                    </div>
-                  ))}
+                  <Accordion className="s" type="single" collapsible>
+    {day.details.map((detail, index) => (
+      <AccordionItem className="c" value={`item-${index}`} key={index}>
+        <AccordionTrigger className="name_venue">{detail.label}</AccordionTrigger>
+        <div className="liner"></div>
+        <AccordionContent className="co">
+          <p className="ven_name">{detail.value}</p>
+        </AccordionContent>
+      </AccordionItem>
+    ))}
+  </Accordion>
                 </div>
 
                 {day.additionalInfo && (

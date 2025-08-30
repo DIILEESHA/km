@@ -27,10 +27,11 @@
   margin: 5px 0;
 }
 .c {
+  margin: 10px 0;
   cursor: pointer !important;
 }
 .s {
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 .v {
@@ -78,8 +79,8 @@
     font-size: 16px;
   }
 
-  .hab,.san{
-    font-size: 14px;
+  .hab,.san,.detai_p{
+    font-size: 14px!important;
   }
 }
 
