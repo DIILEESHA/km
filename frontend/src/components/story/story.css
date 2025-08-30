@@ -54,3 +54,86 @@
   /* font-weight: bold; */
   font-size: 20px;
 }
+/* Medium devices/tablets */
+@media (max-width: 991px) {
+  .story {
+    padding: 30px 40px;
+    gap: 30px;
+  }
+
+  .nav_imgs {
+    width: 220px;
+  }
+
+  .welcome_letter {
+    font-size: 24px;
+  }
+
+  .welcome_paragraph {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .west {
+    padding: 8px 30px;
+    font-size: 18px;
+  }
+}
+
+/* Small devices/phones */
+@media (max-width: 767px) {
+  .story {
+    padding: 20px 15px;
+  }
+
+  .nav_imgs {
+    width: 160px;
+  }
+
+  .welcome_letter {
+    font-size: 20px;
+  }
+
+  .welcome_paragraph {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  .ss {
+    height: 35vh;
+  }
+
+  .west {
+    padding: 6px 20px;
+    font-size: 16px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .story {
+    padding: 15px 10px;
+  }
+
+  .nav_imgs {
+    width: 120px;
+  }
+
+  .welcome_letter {
+    font-size: 18px;
+  }
+
+  .welcome_paragraph {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .ss {
+    height: 25vh;
+  }
+
+  .west {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+}

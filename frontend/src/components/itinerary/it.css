@@ -1,5 +1,5 @@
 .it {
-  text-align: center;
+  /* text-align: center; */
   padding: 50px 200px;
   background-color: var(--cream);
 }
@@ -12,6 +12,27 @@
   margin: 0 auto 20px auto;
   display: block;
 }
+/* Chrome, Safari, Edge */
+.tabs::-webkit-scrollbar {
+  height: 6px; /* thickness */
+  background-color: transparent; /* scrollbar background */
+}
+
+.tabs::-webkit-scrollbar-track {
+  background-color: transparent; /* transparent track */
+}
+
+.tabs::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.7); /* semi-transparent thumb */
+  border-radius: 3px;
+}
+
+/* Firefox */
+.tabs {
+  scrollbar-width: thin; /* thinner scrollbar */
+  scrollbar-color: rgba(255,255,255,0.7) transparent; /* thumb, track */
+}
+
 
 .title {
   font-size: 40px;
@@ -38,7 +59,9 @@
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  background-color: transparent;
   padding: 8px 12px;
+  border-radius: 0;
   color: var(--powderblue);
   position: relative;
   transition: color 0.3s ease;
@@ -52,7 +75,7 @@
   right: 0;
   height: 1px;
   background-color: var(--gold);
-  border-radius: 2px;
+  border-radius: 0px;
 }
 
 .saa {
@@ -143,4 +166,121 @@
 .ven_name {
   font-size: 17px;
   color: var(--royal);
+}
+/* Base styles assumed from your provided CSS */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 991px) {
+  .it {
+    padding: 30px 50px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .tabs {
+  }
+
+  .val {
+    font-size: 14px;
+  }
+
+  .valed {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 20px;
+  }
+
+  .sawan,
+  .main_title {
+    font-size: 22px;
+  }
+
+  .top_grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+/* Small devices (phones, 767px and below) */
+@media (max-width: 767px) {
+  .it {
+    padding: 20px 15px;
+  }
+.val[data-state="active"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: transparent;
+  border-radius: 0px;
+}
+  .title {
+    font-size: 28px;
+  }
+
+  .tabs {
+    display: flex;
+overflow: hidden;
+    overflow-x: scroll;
+    /* white-space: nowrap; */
+    padding-bottom: 10px;
+  }
+
+  .tabs::-webkit-scrollbar {
+  }
+
+  .val {
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .valed {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .saa {
+    padding: 0 10px;
+    max-width: 100%;
+  }
+
+  .sawan,
+  .main_title {
+    font-size: 20px;
+  }
+
+  .top_grid {
+    display: block;
+    gap: 15px;
+  }
+
+  .name_venue,
+  .ven_name {
+    text-align: left;
+    font-size: 16px;
+  }
+}
+
+/* Extra small devices (very small phones, 480px and below) */
+@media (max-width: 480px) {
+  .it {
+    padding: 15px 10px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .val {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .sawan,
+  .main_title {
+    font-size: 18px;
+  }
 }

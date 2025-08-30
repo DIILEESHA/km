@@ -90,3 +90,77 @@
     top: -5px;
     right: 5px;
 }
+/* Base styles assumed from your provided CSS */
+
+/* Medium devices/tablets */
+@media (max-width: 991px) {
+  .countdown {
+    padding: 30px 50px;
+  }
+
+  .count_time {
+    font-size: 40px;
+  }
+
+  .counter {
+    font-size: 18px;
+  }
+
+  .master {
+    font-size: 18px;
+    padding: 8px 30px;
+  }
+
+  .bottomly {
+    gap: 40px;
+    padding: 20px;
+  }
+}
+
+/* Small devices/phones */
+@media (max-width: 767px) {
+  .countdown {
+    padding: 20px 15px;
+  }
+
+  .count_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .count_time {
+    font-size: 30px;
+  }
+
+  .counter {
+    font-size: 16px;
+  }
+
+  .bottomly {
+    /* flex-direction: column; */
+    padding: 20px 70px;
+    gap: 20px;
+  }
+
+  .master {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .count_time {
+    font-size: 24px;
+  }
+
+  .counter {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}

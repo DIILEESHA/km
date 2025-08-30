@@ -2,8 +2,8 @@
   width: 100px;
   height: 100px;
   object-fit: contain;
-  display: block; /* changed from flex to block */
-  margin: 0 auto; /* center horizontally if needed */
+  display: block;
+  margin: 0 auto;
 }
 
 .lk {
@@ -11,13 +11,15 @@
   align-items: center;
   justify-content: center;
 }
+
 .nav {
   background-color: var(--cream);
   border-bottom: 1px solid var(--powderblue);
-  top: 0;
   position: sticky;
+  top: 0;
   z-index: 111;
 }
+
 .nav_grid {
   display: flex;
   overflow: hidden;
@@ -26,15 +28,10 @@
   height: 100px;
   padding-left: 50px;
   gap: 50px;
+  position: relative;
 }
 
-.nav_sub {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* ensure full height for vertical centering */
-}
-
+/* Default nav ul and li */
 .nav_ul {
   display: flex;
   gap: 20px;
@@ -45,4 +42,70 @@
   text-transform: capitalize;
   font-size: 18px;
   cursor: pointer;
+}
+
+/* Hide mobile menu icon on desktop */
+.mobile_menu_icon {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  color: var(--blue);
+}
+
+/* Mobile menu styles */
+.mobile_menu {
+  display: none;
+  background-color: var(--cream);
+  border-top: 1px solid var(--powderblue);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100px;
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 110;
+}
+
+.mobile_nav_ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile_nav_ul .nav_li {
+  text-align: center;
+  padding: 12px 0;
+  font-size: 18px;
+  color: var(--blue);
+  border-bottom: 1px solid var(--powderblue);
+}
+
+.mobile_nav_ul .nav_li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .nav_grid {
+    padding-left: 20px;
+    gap: 10px;
+  }
+
+  /* Hide desktop nav menu */
+  .desktop_menu {
+    display: none;
+  }
+
+  /* Show mobile menu icon */
+  .mobile_menu_icon {
+    display: block;
+  }
+
+  /* Show mobile menu when open */
+  .mobile_menu.open {
+    display: block;
+    z-index: 1000;
+  }
 }
